@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single Thread Test">
+    <listeners>
+        <listener class-name="com.enuygun.listener.Listener"/>
+    </listeners>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.enuygun.test.Case1_BasicFlightSearchTest"/>
+            <class name="com.enuygun.test.Case2_TurkishAirlinesPriceSortTest"/>
+            <class name="com.enuygun.test.Case3_CriticalPathTest"/>
+        </classes>
+    </test>
+</suite>
